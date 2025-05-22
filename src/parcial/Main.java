@@ -51,7 +51,7 @@ public class Main {
                     Collections.sort(agencia.naves, new ComparadorAniLanzamientoDesc());
                     break;
                 case 6:
-                    Collections.sort(agencia.naves, new ComparatorCapacidadTripulacionDesc());
+                    Collections.sort(agencia.naves, new ComparadorCapacidadTripulacionDesc());
                     break;
                 case 7:
                     System.out.println("Saliendo...");

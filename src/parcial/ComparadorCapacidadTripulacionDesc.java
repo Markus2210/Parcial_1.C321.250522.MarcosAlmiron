@@ -10,7 +10,7 @@ import java.util.Comparator;
  *
  * @author marco
  */
-public class ComparatorCapacidadTripulacionDesc implements Comparator<Nave>{
+public class ComparadorCapacidadTripulacionDesc implements Comparator<Nave>{
     @Override
     public int compare(Nave o1, Nave o2){
         return Double.compare(o2.getCapacidadTripulacion(),o1.getCapacidadTripulacion());

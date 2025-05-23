@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>88</x><y>112</y><w>152</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+ComparadorAniLanzamientoDesc
+--
++compare(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>152</x><y>464</y><w>104</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Explorable
+--
++explorar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>320</y><w>144</w><h>96</h></coordinates><panel_attributes>Exploracion
+--
+-tipoMision: String
+--
++getTipoMision() : String
++explorar(): void
++mostrarNaves(): void
++toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>200</y><w>152</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+ComparadorPorNombre
+--
++compare(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>16</y><w>152</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+ComparadorAniLanzamientoDesc
+--
++compare(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>136</x><y>320</y><w>136</w><h>96</h></coordinates><panel_attributes>Carguero
+--
+-capacidadCarga : int
+--
++explorar():void
++mostrarNaves(): void
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>320</y><w>136</w><h>96</h></coordinates><panel_attributes>CrucerosEstelares
+--
+-cantidadPasajeros: int
+--
++getCantidadPasajeros(): int
++mostrarNaves(): void
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>304</x><y>128</y><w>160</w><h>144</h></coordinates><panel_attributes>&lt;&lt;AbstractClass&gt;&gt;
+Nave
+--
+-nombre: int
+-capacidadTripulacion: int
+-anioLanzamiento: int
+--
++getNombre(): String
++getCapacidadTripulacion(): int
++getAnioLanzamiento(): int
++/mostrarNaves()/: void
++equals(): booblean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>480</y><w>168</w><h>104</h></coordinates><panel_attributes>AgenciaEspacial
+-Naves: List&lt;Nave&gt;
+--
++naveExiste(): boolean
++agregarNave(): void
++mostrar(): void
++iniciarExploracion(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>264</y><w>144</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>264</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>264</y><w>128</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;140;50;140;70</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>56</y><w>160</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>180;90;180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>144</y><w>88</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>216</y><w>96</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;50;10;50;50;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>184</x><y>400</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>416</y><w>96</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;100;100;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>176</y><w>296</w><h>392</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>100;460;350;460;350;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>408</y><w>40</w><h>88</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>408</y><w>40</w><h>88</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>64</x><y>368</y><w>320</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>380;240;10;240;10;10;90;10</additional_attributes></element></diagram>

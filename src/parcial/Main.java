@@ -45,13 +45,16 @@ public class Main {
                     agencia.iniciarExploracion();
                     break;
                 case 4:
-                    Collections.sort(agencia.naves, new ComparadorPorNombre());
+                    Collections.sort(agencia.naves);
+                    agencia.mostrar();
                     break;
                 case 5:
                     Collections.sort(agencia.naves, new ComparadorAniLanzamientoDesc());
+                    agencia.mostrar();
                     break;
                 case 6:
                     Collections.sort(agencia.naves, new ComparadorCapacidadTripulacionDesc());
+                    agencia.mostrar();
                     break;
                 case 7:
                     System.out.println("Saliendo...");

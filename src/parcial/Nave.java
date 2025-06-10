@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author marco
  */
-public abstract class Nave {
+public abstract class Nave implements Comparable<Nave> {
     private String nombre;
     private int capacidadTripulacion;
     private int anioLanzamiento;
@@ -36,6 +36,10 @@ public abstract class Nave {
     public abstract void mostrarNaves();
 
   
+    @Override
+    public int compareTo(Nave nave){
+        return this.nombre.compareToIgnoreCase(nave.getNombre());
+    }
     
     @Override
     public boolean equals(Object obj) {

@@ -41,12 +41,12 @@ public class AgenciaEspacial {
     }
     
     public void iniciarExploracion(){
-        System.out.println("Inicializando Exploracion");
+        System.out.println("---Inicializando Exploracion---");
         for(Nave nave : naves){
             if(nave instanceof Explorable){
                 ((Explorable)nave).explorar();
             }else {
-                System.out.println(nave.getNombre() + " no puede realizar la Exploracion porque es un Crucero");
+                System.out.println(nave.getNombre() + " --> no puede realizar la exploracion porque es un Crucero");
             }
         }
     }

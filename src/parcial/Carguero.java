@@ -28,12 +28,12 @@ public class Carguero extends Nave implements Explorable{
     
     @Override
     public void explorar(){
-        System.out.println("Iniciando Exploracion!!");
+        System.out.println(this.getNombre() + " --> Iniciando Exploracion!!");
     }
     
      @Override
      public void mostrarNaves(){
-         System.out.println("Carguero " + getNombre() + " ,Tripulacion: " + getCapacidadTripulacion() + " ,Año: " + getAnioLanzamiento() + " ,Carga: " + getCapacidadCarga() );
+         System.out.println("Carguero: " + getNombre() + " | Tripulacion: " + getCapacidadTripulacion() + " | Año de Lanzamiento: " + getAnioLanzamiento() + " | Carga: " + getCapacidadCarga() );
      }
     
     

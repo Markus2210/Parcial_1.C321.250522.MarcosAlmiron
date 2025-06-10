@@ -22,7 +22,7 @@ public class CrucerosEstelares extends Nave{
 
      @Override
      public void mostrarNaves(){
-         System.out.println("Crucero " + getNombre() + " ,Tripulacion: " + getCapacidadTripulacion() + " ,Año: " + getAnioLanzamiento() + ", Pasajeros: " + getCantidadPasajeros());
+         System.out.println("Crucero: " + getNombre() + " | Tripulacion: " + getCapacidadTripulacion() + " | Año de Lanzamiento: " + getAnioLanzamiento() + " | Pasajeros: " + getCantidadPasajeros());
      }
     
     @Override

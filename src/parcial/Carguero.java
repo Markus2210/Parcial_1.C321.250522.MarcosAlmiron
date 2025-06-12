@@ -8,42 +8,51 @@ package parcial;
  *
  * @author marco
  */
-public class Carguero extends Nave implements Explorable{
-    private int capacidadCarga;
+public class Carguero extends Nave implements Explorable {
+
+    private final int CAPACIDADMIN = 100;
+    private final int CAPACIDADMAX = 500;
+
+    public int capacidadCarga;
 
     public Carguero(int capacidadCarga, String nombre, int capacidadTripulacion, int anioLanzamiento) {
         super(nombre, capacidadTripulacion, anioLanzamiento);
-        if(capacidadCarga < 100){
-            capacidadCarga = 100;
-        }else if(capacidadCarga > 500){
-            capacidadCarga = 500;
-        } 
+//         if(capacidadCarga < CAPACIDADMIN){
+//            capacidadCarga = CAPACIDADMIN;
+//        }else if(capacidadCarga > CAPACIDADMAX){
+//            capacidadCarga = CAPACIDADMAX;
+//        }
+
         this.capacidadCarga = capacidadCarga;
+        carga(capacidadCarga);
+
     }
 
     public int getCapacidadCarga() {
         return capacidadCarga;
     }
 
-    
+    private void carga(int capacidadCarga1) {
+        if (capacidadCarga < CAPACIDADMIN) {
+            capacidadCarga = CAPACIDADMIN;
+        } else if (capacidadCarga > CAPACIDADMAX) {
+            capacidadCarga = CAPACIDADMAX;
+        }
+    }
+
     @Override
-    public void explorar(){
+    public void explorar() {
         System.out.println(this.getNombre() + " --> Iniciando Exploracion!!");
     }
-    
-     @Override
-     public void mostrarNaves(){
-         System.out.println("Carguero: " + getNombre() + " | Tripulacion: " + getCapacidadTripulacion() + " | Año de Lanzamiento: " + getAnioLanzamiento() + " | Carga: " + getCapacidadCarga() );
-     }
-    
-    
+
+    @Override
+    public void mostrarNaves() {
+        System.out.println("Carguero: " + getNombre() + " | Tripulacion: " + getCapacidadTripulacion() + " | Año de Lanzamiento: " + getAnioLanzamiento() + " | Carga: " + getCapacidadCarga());
+    }
+
     @Override
     public String toString() {
         return "Carguero{" + "capacidadCarga=" + capacidadCarga + '}';
     }
-    
-    
-    
-     
-    
+
 }

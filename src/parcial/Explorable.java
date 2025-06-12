@@ -9,5 +9,5 @@ package parcial;
  * @author marco
  */
 public interface Explorable {
-    public void explorar();
+     void explorar();
 }

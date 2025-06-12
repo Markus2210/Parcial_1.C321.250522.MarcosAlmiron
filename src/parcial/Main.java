@@ -119,7 +119,7 @@ public class Main {
                 return numero;
             } else {
                 System.out.print("Ingrese un número válido: ");
-                            }
+            }
         }
     }
 }

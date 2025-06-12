@@ -87,11 +87,15 @@ public class Main {
 
         switch (tipo) {
             case 1:
-                System.out.println("-Tipo de Mision( CARTOGRAFIA | INVESTIGACION | CONTACTO): ");
-                String mision = sc.nextLine().toUpperCase();
-                if (!mision.equals("CARTOGRAFIA") && !mision.equals("INVESTIGACION") && !mision.equals("CONTACTO")) {
-                    System.out.println("Mision invalida");
-                    return;
+                String mision;
+                while (true) {
+                    System.out.println("-Tipo de Mision (CARTOGRAFIA | INVESTIGACION | CONTACTO): ");
+                    mision = sc.nextLine().toUpperCase();
+                    if (mision.equals("CARTOGRAFIA") || mision.equals("INVESTIGACION") || mision.equals("CONTACTO")) {
+                        break;
+                    } else {
+                        System.out.println("Misión inválida. Intente nuevamente.");
+                    }
                 }
                 agencia.agregarNave(new Exploracion(mision, nombre, tripulacion, anio));
                 break;
